@@ -1,4 +1,4 @@
-MPASM 5.84                LEDSPIC16F628A.ASM   3-19-2024  12:45:01         PAGE  1
+MPASM 5.84                LEDSPIC16F628A.ASM   3-22-2024  23:07:45         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -24,17 +24,29 @@ Warning[205]: Found directive in column 1. (__CONFIG)
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
 0001   1006           00006     bcf TRISB,0     ;RB0 ES LA SALIDA
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0002   1786           00007     bsf TRISB,7     ;RB7 COMO ENTRADA
-0003   1283           00008     bcf STATUS,5    ;IR AL BANCO 0
-0004   1006           00009 ini     bcf PORTB,0  ;RB0 APAGADO
-0005   1F86           00010     btfss PORTB,7   
-0006   2???           00011     goto $-1
-0007   1406           00012     bsf PORTB,0
-0008   1B86           00013     btfsc PORTB,7
-0009   2???           00014     goto $-1
-000A   2???           00015     goto ini
-3F59                  00016     end
-MPASM 5.84                LEDSPIC16F628A.ASM   3-19-2024  12:45:01         PAGE  2
+0002   1086           00007     bcf TRISB,1     ;RB1 ES LA SALIDA
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0003   1106           00008     bcf TRISB,2     ;RB2 ES LA SALIDA
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0004   1186           00009     bcf TRISB,3     ;RB3 ES LA SALIDA
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0005   1786           00010     bsf TRISB,7     ;RB7 COMO ENTRADA
+0006   1283           00011     bcf STATUS,5    ;IR AL BANCO 0
+0007   1006           00012 ini     bcf PORTB,0  ;RB0 APAGADO
+0008   1086           00013         bcf PORTB,1
+0009   1106           00014         bcf PORTB,2
+000A   1186           00015         bcf PORTB,3
+000B   1F86           00016     btfss PORTB,7   
+000C   2???           00017     goto $-1
+000D   1406           00018     bsf PORTB,0
+000E   1486           00019     bsf PORTB,1 
+000F   1506           00020     bsf PORTB,2
+0010   1586           00021     bsf PORTB,3
+0011   1B86           00022     btfsc PORTB,7
+0012   2???           00023     goto $-1
+0013   2???           00024     goto ini
+3F59                  00025     end
+MPASM 5.84                LEDSPIC16F628A.ASM   3-22-2024  23:07:45         PAGE  2
 
 
 SYMBOL TABLE
@@ -93,7 +105,7 @@ NOT_BOD                           00000000
 NOT_BOR                           00000000
 NOT_PD                            00000003
 NOT_POR                           00000001
-MPASM 5.84                LEDSPIC16F628A.ASM   3-19-2024  12:45:01         PAGE  3
+MPASM 5.84                LEDSPIC16F628A.ASM   3-22-2024  23:07:45         PAGE  3
 
 
 SYMBOL TABLE
@@ -152,7 +164,7 @@ STATUS                            00000003
 SYNC                              00000004
 T0CS                              00000005
 T0IE                              00000005
-MPASM 5.84                LEDSPIC16F628A.ASM   3-19-2024  12:45:01         PAGE  4
+MPASM 5.84                LEDSPIC16F628A.ASM   3-22-2024  23:07:45         PAGE  4
 
 
 SYMBOL TABLE
@@ -211,7 +223,7 @@ TXIE                              00000004
 TXIF                              00000004
 TXREG                             00000019
 TXSTA                             00000098
-MPASM 5.84                LEDSPIC16F628A.ASM   3-19-2024  12:45:01         PAGE  5
+MPASM 5.84                LEDSPIC16F628A.ASM   3-22-2024  23:07:45         PAGE  5
 
 
 SYMBOL TABLE
@@ -230,8 +242,8 @@ WR                                00000001
 WREN                              00000002
 WRERR                             00000003
 Z                                 00000002
-_.org_0_0006                      00000006
-_.org_0_0009                      00000009
+_.org_0_000C                      0000000C
+_.org_0_0012                      00000012
 _BODEN_OFF                        00003FBF
 _BODEN_ON                         00003FFF
 _BOREN_OFF                        00003FBF
@@ -270,7 +282,7 @@ _MCLRE_ON                         00003FFF
 _PWRTE_OFF                        00003FFF
 _PWRTE_ON                         00003FF7
 _RC_OSC_CLKOUT                    00003FFF
-MPASM 5.84                LEDSPIC16F628A.ASM   3-19-2024  12:45:01         PAGE  6
+MPASM 5.84                LEDSPIC16F628A.ASM   3-22-2024  23:07:45         PAGE  6
 
 
 SYMBOL TABLE
@@ -283,10 +295,10 @@ _WDT_OFF                          00003FFB
 _WDT_ON                           00003FFF
 _XT_OSC                           00003FED
 __16F628A                         00000001
-ini                               00000004
+ini                               00000007
 
 Errors   :     0
 Warnings :     1 reported,     0 suppressed
-Messages :     2 reported,     0 suppressed
+Messages :     5 reported,     0 suppressed
 
 

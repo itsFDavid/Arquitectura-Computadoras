@@ -1,11 +1,11 @@
 MPLINK 5.09, LINKER
-Linker Map File - Created Tue Mar 19 12:45:03 2024
+Linker Map File - Created Fri Mar 22 23:07:48 2024
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
-                   .org_0       code   0x000000    program   0x000016
-                   .cinit    romdata   0x00000b    program   0x000004
+                   .org_0       code   0x000000    program   0x000028
+                   .cinit    romdata   0x000014    program   0x000004
 .config_2007_BUILD/DEFAULT/PRODUCTION/LEDSPIC       code   0x002007    program   0x000002
 
 
@@ -13,26 +13,26 @@ Linker Map File - Created Tue Mar 19 12:45:03 2024
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x00000c      
+                            0x000000    0x000015      
                             0x002007    0x002007      
-            14 out of 2182 program addresses used, program memory utilization is 0%
+            23 out of 2182 program addresses used, program memory utilization is 1%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-             _.org_0_0006   0x000006    program     static C:\Users\David\Desktop\SEMESTRE4\ARQUI COMPUTADORAS\Prueba_1\EnsambladorLeds\Leds.X\ledsPic16f628a.asm
-             _.org_0_0009   0x000009    program     static C:\Users\David\Desktop\SEMESTRE4\ARQUI COMPUTADORAS\Prueba_1\EnsambladorLeds\Leds.X\ledsPic16f628a.asm
-                      ini   0x000004    program     static C:\Users\David\Desktop\SEMESTRE4\ARQUI COMPUTADORAS\Prueba_1\EnsambladorLeds\Leds.X\ledsPic16f628a.asm
+             _.org_0_000C   0x00000c    program     static C:\Users\David\Desktop\SEMESTRE4\ARQUI COMPUTADORAS\Prueba_1\EnsambladorLeds\Leds.X\ledsPic16f628a.asm
+             _.org_0_0012   0x000012    program     static C:\Users\David\Desktop\SEMESTRE4\ARQUI COMPUTADORAS\Prueba_1\EnsambladorLeds\Leds.X\ledsPic16f628a.asm
+                      ini   0x000007    program     static C:\Users\David\Desktop\SEMESTRE4\ARQUI COMPUTADORAS\Prueba_1\EnsambladorLeds\Leds.X\ledsPic16f628a.asm
 
 
 
                               Symbols - Sorted by Address
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                      ini   0x000004    program     static C:\Users\David\Desktop\SEMESTRE4\ARQUI COMPUTADORAS\Prueba_1\EnsambladorLeds\Leds.X\ledsPic16f628a.asm
-             _.org_0_0006   0x000006    program     static C:\Users\David\Desktop\SEMESTRE4\ARQUI COMPUTADORAS\Prueba_1\EnsambladorLeds\Leds.X\ledsPic16f628a.asm
-             _.org_0_0009   0x000009    program     static C:\Users\David\Desktop\SEMESTRE4\ARQUI COMPUTADORAS\Prueba_1\EnsambladorLeds\Leds.X\ledsPic16f628a.asm
+                      ini   0x000007    program     static C:\Users\David\Desktop\SEMESTRE4\ARQUI COMPUTADORAS\Prueba_1\EnsambladorLeds\Leds.X\ledsPic16f628a.asm
+             _.org_0_000C   0x00000c    program     static C:\Users\David\Desktop\SEMESTRE4\ARQUI COMPUTADORAS\Prueba_1\EnsambladorLeds\Leds.X\ledsPic16f628a.asm
+             _.org_0_0012   0x000012    program     static C:\Users\David\Desktop\SEMESTRE4\ARQUI COMPUTADORAS\Prueba_1\EnsambladorLeds\Leds.X\ledsPic16f628a.asm
 
 
